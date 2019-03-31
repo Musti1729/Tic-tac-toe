@@ -75,7 +75,13 @@ namespace xogame
                 {
                     Console.Write("Enter a Row:[1..3]");
                     string Rowstr = Console.ReadLine();
-                    row = Convert.ToInt32(Rowstr);
+                    try
+                    {
+                        row = Convert.ToInt32(Rowstr);
+                    } catch(Exception)
+                    {
+                        Console.WriteLine("Invalid input.");
+                    }
                 } while (row > 3 || row < 1);
 
                 do
