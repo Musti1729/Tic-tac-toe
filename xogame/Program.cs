@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System;
 
 namespace xogame
 {
@@ -17,7 +13,7 @@ namespace xogame
         int row = 0;
         int col = 0;
         int player = 1;
-        static bool win=false;
+        static bool win;
 
         //--------------<Main>-----------
         static void Main(string[] args)
@@ -32,7 +28,7 @@ namespace xogame
                 obj.GetInput();
                 obj.SetArray();
                 win = obj.CheckWinner();
-                if (win == true)
+                if (win)
                 {
                     break;
                 }
@@ -168,7 +164,7 @@ namespace xogame
         //-----------------<PrintResult>------------
         void PrintResult()
         {
-            if (win == true)
+            if (win)
             {
                 if (player == 1)
                 {
@@ -181,7 +177,7 @@ namespace xogame
             }
             else
             {
-                Console.WriteLine("No body won");
+                Console.WriteLine("Nobody won");
             }
         }
     }
