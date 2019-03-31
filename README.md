@@ -9,4 +9,4 @@ Tic tac toe console game in C#
 # How?
 For building from source in Visual Studio (or MonoDevelop or JetBrains Rider on linux), open xogame.sln with your IDE and [run](https://www.youtube.com/watch?v=b4h1q3cCl2w):
 
-![alt text](https://github.com/Musti1729/Tic-tac-toe/blob/master/run.JPG "Running console of game")
+![alt text](https://github.com/Musti1729/Tic-Tac-Toe/blob/master/run.JPG "Running console of game")
