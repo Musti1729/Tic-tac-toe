@@ -88,7 +88,12 @@ namespace xogame
                 {
                     Console.Write("Enter a Col:[1..3]");
                     string Colstr = Console.ReadLine();
-                    col = Convert.ToInt32(Colstr);
+                    try{
+                        col = Convert.ToInt32(Colstr);
+                    } catch(Exception)
+                    {
+                        Console.WriteLine("Invalid input.");
+                    }
 
                 } while (col > 3 || col < 1);
                 row--;
